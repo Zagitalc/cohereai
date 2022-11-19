@@ -1,10 +1,9 @@
-from cohere.classify import Example
 import cohere
+from cohere.classify import Example
 co = cohere.Client('lFHIj2hW8tNMFa1oDPUspENDrDHAWDV12ob8YMvO')
 
 
 examples = [
-    Example("Ng Tsz Lok", "Toxic"),
     Example("you are hot trash", "Toxic"),
     Example("go to hell", "Toxic"),
     Example("get rekt moron", "Toxic"),
@@ -20,45 +19,16 @@ examples = [
     Example("That is an interesting point", "Benign"),
     Example("I love this", "Benign"),
     Example("We should try that sometime", "Benign"),
-    Example("You should go for it", "Benign"),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example("")
-
+    Example("You should go for it", "Benign")
 ]
 
-inputs = ["go to hell", "Ng Tsz Lok"]
+inputs = [
+    "this game sucks, you suck",
+    "stop being a dumbass",
+    "Let's do this once and for all",
+    "This is coming along nicely"
+]
+
 response = co.classify(
     model='medium',
     inputs=inputs,
