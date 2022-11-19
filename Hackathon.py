@@ -1,5 +1,6 @@
-from cohere.classify import Example
 import cohere
+import json
+from cohere.classify import Example
 co = cohere.Client('lFHIj2hW8tNMFa1oDPUspENDrDHAWDV12ob8YMvO')
 
 examples = [
@@ -67,5 +68,14 @@ response = co.classify(
     inputs=inputs,
     examples=examples
 )
+f = open('dataset.json')
+for data in f:
+    for newData in data:
+        print(newData)
+inputs = open
+# response = co.classify(
+# model='medium',
+# inputs=inputs,
+# examples=examples)
 
-print(response.classifications)
+# print(response.classifications)
