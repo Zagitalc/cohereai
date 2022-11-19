@@ -1,7 +1,6 @@
-import cohere
 from cohere.classify import Example
+import cohere
 co = cohere.Client('lFHIj2hW8tNMFa1oDPUspENDrDHAWDV12ob8YMvO')
-
 
 examples = [
     Example("you are hot trash", "Toxic"),
@@ -20,40 +19,41 @@ examples = [
     Example("I love this", "Benign"),
     Example("We should try that sometime", "Benign"),
     Example("You should go for it", "Benign"),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example(""),
-    Example("")
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Toxic"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign"),
+    Example("", "Benign")
+]
 
 inputs = [
     "this game sucks, you suck",
@@ -63,7 +63,7 @@ inputs = [
 ]
 
 response = co.classify(
-    model='medium',
+    model='large',
     inputs=inputs,
     examples=examples
 )
