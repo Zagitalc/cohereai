@@ -45,7 +45,8 @@ examples = [
     Example("Good game", "Benign"),
     Example("I appreciate the video.", "Benign"),
     Example("Happy birthday will! ", "Benign"),
-    Example("You are a wise man, Will. We all felt with You during those days. ", "Benign"),
+    Example(
+        "You are a wise man, Will. We all felt with You during those days. ", "Benign"),
     Example("Fuck you", "Toxic"),
     Example("Peace to you man", "Benign"),
     Example("Idk if ur reading this but ur amazing dude. It’s just ur family dude they don’t deserve u they are pulling u down.", "Benign"),
