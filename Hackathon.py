@@ -21,7 +21,7 @@ examples = [
     Example("I love this", "Benign"),
     Example("We should try that sometime", "Benign"),
     Example("You should go for it", "Benign"),
-    Example(""),
+    Example("eccec"),
     Example(""),
     Example(""),
     Example(""),
