@@ -23,13 +23,17 @@ examples = [
   Example("You should go for it", "Benign")
 ]
 
-inputs =["go to hell","Ng Tsz Lok"]
+f=open('dataset.json')
+for data in f:
+  for newData in data:
+    print(newData)
+inputs = open
 response = co.classify(
     model='medium',
     inputs= inputs,
     examples = examples
 )
 
-print(response.classifications)
+#print(response.classifications)
 
 
