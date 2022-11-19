@@ -1,10 +1,9 @@
-from cohere.classify import Example
 import cohere
+from cohere.classify import Example
 co = cohere.Client('lFHIj2hW8tNMFa1oDPUspENDrDHAWDV12ob8YMvO')
 
-
+import json
 examples = [
-    Example("Ng Tsz Lok", "Toxic"),
     Example("you are hot trash", "Toxic"),
     Example("go to hell", "Toxic"),
     Example("get rekt moron", "Toxic"),
@@ -21,7 +20,7 @@ examples = [
     Example("I love this", "Benign"),
     Example("We should try that sometime", "Benign"),
     Example("You should go for it", "Benign"),
-    Example("eccec"),
+    Example(""),
     Example(""),
     Example(""),
     Example(""),
@@ -56,6 +55,11 @@ examples = [
     Example(""),
     Example("")
 
+inputs = [
+    "this game sucks, you suck",
+    "stop being a dumbass",
+    "Let's do this once and for all",
+    "This is coming along nicely"
 ]
 
 f=open('dataset.json')
