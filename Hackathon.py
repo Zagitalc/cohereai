@@ -72,11 +72,12 @@ response = co.classify(
 f = open('dataset.json')
 for data in f:
     for newData in data:
-        print(newData)
-inputs = open
-# response = co.classify(
-# model='medium',
-# inputs=inputs,
-# examples=examples)
+        print(newData["text"])
 
-# print(response.classifications)
+inputs = open
+response = co.classify(
+    model='medium',
+    inputs=inputs,
+    examples=examples)
+
+print(response.classifications)
