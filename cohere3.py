@@ -1,7 +1,8 @@
 from cohere.classify import Example
 import cohere
 import json
-
+import pywebio
+from pywebio.output import *
 co = cohere.Client('lFHIj2hW8tNMFa1oDPUspENDrDHAWDV12ob8YMvO')
 examples = [
     Example("you are hot trash", "Toxic"),
@@ -88,4 +89,5 @@ response2 = co.generate(
     stop_sequences=["--"])
 
 summary = response2.generations[0].text
-print(response.classifications)
+put_table()
+print(response.classifications, summary)
