@@ -2,7 +2,7 @@
 import cohere
 from cohere.classify import Example
 # api key: dHjh9nk6T7wKsc0nyyCXAppebCLcZtt6JB6C4hT6
-co = cohere.Client('dHjh9nk6T7wKsc0nyyCXAppebCLcZtt6JB6C4hT6')
+co = cohere.Client('6ftc8qLJKvFxyvzsO8OCEPLTRZweZqacHnybY1Gg')
 
 inputs = [
     "this game sucks, you suck",

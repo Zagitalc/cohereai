@@ -1,8 +1,8 @@
+from cohere.classify import Example
 import cohere
 import json
-from cohere.classify import Example
-co = cohere.Client('lFHIj2hW8tNMFa1oDPUspENDrDHAWDV12ob8YMvO')
 
+co = cohere.Client('lFHIj2hW8tNMFa1oDPUspENDrDHAWDV12ob8YMvO')
 examples = [
     Example("you are hot trash", "Toxic"),
     Example("go to hell", "Toxic"),
